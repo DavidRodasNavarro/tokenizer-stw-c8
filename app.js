@@ -4,7 +4,7 @@ function Tokenizer(){
     this.run = function(list) {
       list.forEach((item) => {
         if(this.dictionary[item] == undefined) {
-          console.log(item);
+          //console.log(item);
           this.dictionary["onDefault"]();
         } else {
           this.dictionary[item]();
